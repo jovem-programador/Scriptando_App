@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicooon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Scriptando</title>
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <header class="header" id="header">
+
+            <a href="#home"><i class="fab fa-fw fa-wolf-pack-battalion"></i></a>
+            <h1>Scriptando</h1>
+            <a href="#menu" id="btnMenu" data-nome="Luferat"><i class="fas fa-fw fa-ellipsis-v"></i></a>
+
+        </header>
+
+        <nav class="nav" id="nav">
+
+            <span id="usermenu">
+                <i class="fas fa-fw fa-spinner fa-spin"></i>
+                <span>&nbsp;Aguarde...</span>
+            <a href="#user"><i class="fas fa-fw fa-sign-in-alt"></i></a>
+            </span>
+            <hr>
+            <a href="#artigos"><i class="fas fa-fw fa-pen-nib"></i> Artigos</a>
+            <a href="#noticias"><i class="far fa-fw fa-newspaper"></i> Notícias</a>
+            <hr>
+            <a href="#contatos"><i class="fas fa-fw fa-mail-bulk"></i> Contatos</a>
+            <a href="#sobre"><i class="fas fa-fw fa-info-circle"></i> Sobre</a>
+            <hr>
+            <a href="#perfil" id="perfil"><i class="fas fa-fw fa-user-cog"></i> Meu perfil</a>
+            <a href="#config"><i class="fas fa-fw fa-cogs"></i> Configurações</a>
+
+        </nav>
+
+        <!-- Conteúdo da página será carregado aqui pelo JavaScript -->
+        <main class="main" id="main"></main>
+
+        <footer class="footer" id="footer">
+
+            &copy; 2020 <a href="https://br.linkedin.com/in/anderson-marley-211541195">Anderson Marley</a>
+
+        </footer>
+
+    </div>
+
+    <div class="modalbg" id="modalMenu"></div>
+
+    <!-- Carrega o framework jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Carrega o API-Core do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+    <!-- Carrega a API do Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+
+    <!-- Carrega a API do Firebase Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+
+    <!-- Configura e conecta o Farebase -->
+    <script src="js/fbconfig.js"></script>
+
+    <!-- Firebase Authentication -->
+    <script src="js/fbauth.js"></script>
+
+    <!-- Processa o menu principal e outras coisas -->
+    <script src="js/global.jquery.js"></script>
+
+    <!-- Processa as rotas internas e links externos -->
+    <script src="js/routing.jquery.js"></script>
+</body>
+
+</html>

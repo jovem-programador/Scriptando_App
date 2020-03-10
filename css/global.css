@@ -1,0 +1,220 @@
+/* CSS do tema */
+
+:root {
+    --wrap-max-width: 960px;
+}
+
+
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 1rem 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+
+/* Fundo do App */
+
+body {
+    background-color: white;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Wrap */
+
+.wrap {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    max-width: var(--wrap-max-width);
+    position: relative;
+    width: 100%;
+}
+
+
+/* Cabeçalho (header) */
+
+.header {
+    align-items: center;
+    background: #436EEF;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    margin: auto;
+    width: 100%;
+    max-width: var(--wrap-max-width);
+    position: fixed;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.header a {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: .8rem;
+}
+
+.header a:hover {
+    background: #313638;
+}
+
+.header h1 {
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .15rem;
+    margin: 0;
+}
+
+.header * {
+    transition: .3s;
+}
+
+
+/* Menu principal */
+
+.nav {
+    background: #436EEF;
+    /*box-shadow: -5px 5px 5px #ddd;*/
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 3rem;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav a {
+    color: whitesmoke;
+    display: block;
+    padding: 1rem;
+}
+
+.nav a:hover {
+    background:  #313638;
+}
+
+.nav hr {
+    border: 0;
+    border-top: 1px dotted rgb(212, 212, 212);
+    margin: 0;
+}
+
+#usermenu {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+
+#usermenu>*:last-child {
+    margin-left: auto;
+}
+
+#usermenu img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+#perfil {
+    display: none;
+}
+
+
+/* Fundo do menu */
+
+.modalbg {
+    background: rgba(128, 128, 128, 0.671);
+    display: none;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 3rem;
+    width: 100%;
+    z-index: 50;
+}
+
+
+/* Conteúdo central (main) */
+
+.main {
+    flex-grow: 1;
+    margin: 3rem 0 1rem 0;
+    overflow: auto;
+}
+
+
+/* Rodapé (footer) */
+
+.footer {
+    background: #436EEF;
+    bottom: 0;
+    color: white;
+    font-size: .8rem;
+    left: 50%;
+    max-width: var(--wrap-max-width);
+    padding: .5rem;
+    position: fixed;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    color: #313638;
+}
+
+
+/* Slide do menu */
+
+.anim {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.animOpen {
+    max-height: 100vh;
+}
+
+.center {
+    text-align: center;
+}
